@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Pruebas_Modulo>
+            <version>0.1.0</version>
+        </Pruebas_Modulo>
+    </modules>
+    <global>
+        <models>
+            <lesson>
+                <class>Pruebas_Modulo_Model</class>
+            </lesson>
+        </models>
+        <blocks>
+            <lesson>
+                <class>Pruebas_Modulo_Block</class>
+            </lesson>
+        </blocks>
+        <helpers>
+            <lesson>
+                <class>Pruebas_Modulo_Helper</class>
+            </lesson>
+        </helpers>
+    </global>
+</config>
