@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Gerardo_Database>
+            <version>0.0.1</version>
+        </Gerardo_Database>
+    </modules>
+    <global>
+        <blocks>
+            <database>
+                <class>Gerardo_Database_Block</class>
+            </database>
+        </blocks>
+        <helpers>
+            <database>
+                <class>Gerardo_Database_Helper</class>
+            </database>
+        </helpers>
+        <models>
+            <database>
+                <class>Gerardo_Database_Model</class>
+            </database>
+        </models>
+    </global>
+    <frontend>
+        <routers>
+            <database>
+                <use>standard</use>
+                <args>
+                    <module>Gerardo_Database</module>
+                    <frontName>database</frontName>
+                </args>
+            </database>
+        </routers>
+    </frontend>
+</config>
