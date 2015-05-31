@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Gerardo_Database>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Gerardo_Database>
+    </modules>
+</config>
