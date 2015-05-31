@@ -29,3 +29,5 @@ sitemap.xml
 
 /skin/frontend/rwd/default/images/media/logo.png
 /skin/frontend/rwd/default/images/media/logo_small.png
+
+*.sublime*
