@@ -42,12 +42,30 @@ class Gerardo_Helloworld_IndexController extends Mage_Core_Controller_Front_Acti
         $subscription = Mage::getModel('helloworld/subscription');
 
         $subscription->setFirstname('John');
-        $subscription->setLastName('Doe');
+        $subscription->setLastname('Doe');
         $subscription->setEmail('john.doe@example.com');
         $subscription->setMessage('A short message test');
 
         $subscription->save();
 
         echo 'success';
+    }
+
+    public function collectionAction()
+    {
+        $productCollection = Mage::getModel('catalog/product')
+            ->getCollection()
+            ->addAttributeToSelect('price') 
+            ->addAttributeToSelect('image')        
+            ->addAttributeToFilter('entity_id', array(
+                'in' => array(900, 901, 902)
+                ));
+
+        // foreach ($productCollection as $product) {
+        //     Zend_Debug::dump($product->debug());
+
+        $productCollection->load();
+        echo $productCollection->getSelect()->__toString();
+
     }
 }

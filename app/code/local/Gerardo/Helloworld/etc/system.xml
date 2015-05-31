@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <gerardo>
+            <label>Gerardo</label>
+            <sort_order>400</sort_order>
+        </gerardo>
+    </tabs>
+    <sections>
+        <helloworld tranlate="label" module="helloworld">
+            <label>Helloworld</label>
+            <tab>gerardo</tab>
+            <sort_order>10</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <hellopage translate="label">
+                    <label>Hello page settings</label>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <header_title translate="label">
+                            <label>Header title</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            </header_title>
+                        </fields>
+                    </hellopage>
+                </groups>
+            </helloworld>
+        </sections>
+    </config>

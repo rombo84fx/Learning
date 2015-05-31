@@ -56,17 +56,6 @@
                 </connection>
             </helloworld_setup>
         </resources>
-        <admin>
-            <routers>
-                <adminhtml>
-                    <args>
-                        <modules>
-                            <helloword before="Mage_Adminhtml">Gerardo_Helloworld_Adminhtml</helloword>
-                        </modules>
-                    </args>
-                </adminhtml>
-            </routers>
-        </admin>
     </global>
     <frontend>
         <routers>
@@ -95,18 +84,29 @@
         </modules>
     </translate>
 </frontend>
+        <admin>
+            <routers>
+                <adminhtml>
+                    <args>
+                        <modules>
+                            <Gerardo_Helloworld before="Mage_Adminhtml">Gerardo_Helloworld_Adminhtml</Gerardo_Helloworld>
+                        </modules>
+                    </args>
+                </adminhtml>
+            </routers>
+        </admin>
 <!-- <admin>
     <routers>
-        <helloword>
+        <helloworld>
             <use>admin</use>
             <args>
                 <module>Gerardo_Helloworld</module>
                 <frontName>helloworld</frontName>
             </args>
-        </helloword>
+        </helloworld>
     </routers>
-</admin>
- --><!-- <adminhtml>
+</admin> -->
+<!-- <adminhtml>
     <acl>
         <resources>
             <all>
